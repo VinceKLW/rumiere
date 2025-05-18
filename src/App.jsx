@@ -6,6 +6,7 @@ import Home from './pages/home/Home.jsx';
 import About from './pages/about/About.jsx';
 import Routine from './pages/products/Products.jsx';
 import Contact from './pages/contact/Contact.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="myproducts" element={<Routine/>} />
           {/* <Route path="credentials" element={<Credentials/>} /> */}
           <Route path="contact" element={<Contact/>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>
