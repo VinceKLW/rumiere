@@ -42,22 +42,22 @@ const Header = () => {
 
       {/* Mobile menu icon */}
       <div className="xl:hidden absolute right-8">
-        <i className="bx bx-menu text-5xl cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+        <i className={`bx ${isMenuOpen ? 'bx-x' : 'bx-menu'} text-5xl cursor-pointer`} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
       </div>
 
       {/* Mobile dropdown menu */}
       {isMenuOpen && (
-        <div className="fixed top-[calc(100%-1px)] left-0 w-full bg-customColor flex flex-col items-center gap-2 font-semibold text-lg shadow-md xl:hidden z-50">
-          <Link to="/" className="w-full">
+        <div className="absolute top-full left-0 w-full bg-white flex flex-col items-center gap-2 font-semibold text-lg shadow-md xl:hidden z-50 border-t border-gray-200">
+          <Link to="/" className="w-full" onClick={() => setIsMenuOpen(false)}>
             <li className="list-none custom-color custom-font group p-3 transition-all cursor-pointer hover:scale-110 text-center">HOME</li>
           </Link>
-          <Link to="/aboutme" className="w-full">
+          <Link to="/aboutme" className="w-full" onClick={() => setIsMenuOpen(false)}>
             <li className="list-none custom-color custom-font group p-3 transition-all cursor-pointer hover:scale-110 text-center">ABOUT ME</li>
           </Link>
-          <Link to="/myproducts" className="w-full">
+          <Link to="/myproducts" className="w-full" onClick={() => setIsMenuOpen(false)}>
             <li className="list-none custom-color custom-font group p-3 transition-all cursor-pointer hover:scale-110 text-center">MY PRODUCTS</li>
           </Link>
-          <Link to="/contact" className="w-full">
+          <Link to="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
             <li className="list-none custom-color custom-font group p-3 transition-all cursor-pointer hover:scale-110 text-center">CONTACT</li>
           </Link>
         </div>
