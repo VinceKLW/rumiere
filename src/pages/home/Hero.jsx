@@ -35,7 +35,7 @@ function Hero() {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12">
         {/* Text */}
         <div className="text-center lg:text-left max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg text-white leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg leading-tight text-[color:#4E3B2D] lg:text-white">
             PERSONAL BLOG &<br /> SKINCARE JOURNEY.
           </h1>
 

@@ -11,7 +11,7 @@ const SlimmerBox = ({ question, answer }) => {
       className="bg-customColor rounded-2xl shadow-lg w-full py-5 px-10 mt-5 cursor-pointer transition-all duration-300"
     >
       <div className="flex justify-between items-center mb-3">
-        <p className="text-xl font-light text-left">{question}</p>
+        <p className="text-[color:#4E3B2D] text-xl font-regular text-left">{question}</p>
         <img
           src={dropdown}
           alt="dropdown icon"
@@ -55,10 +55,10 @@ function About() {
       <div className="max-w-[700px] w-full">
         {/* About box */}
         <div className="bg-customColor rounded-2xl shadow-lg w-full p-10 mb-5">
-          <p className="text-4xl font-medium text-left mb-4">
+          <p className="text-4xl font-medium text-left mb-4 text-[color:#4E3B2D]">
             A bit about myself!
           </p>
-          <p className="whitespace-pre-line">
+          <p className="whitespace-pre-line ">
             {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis 
             nostrud exercitation ullamco 
             
