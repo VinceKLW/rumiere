@@ -7,6 +7,7 @@ import About from './pages/about/About.jsx';
 import Routine from './pages/products/Products.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import NotFound from './pages/NotFound.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      <Footer />
     </Router>
   );
 };
