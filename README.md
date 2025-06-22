@@ -20,8 +20,6 @@ This website provides visitors with everything they need to learn more about Ati
 | ------------ | ------------- |
 | React        | Netlify       |
 
-> ⚙️ *Optional backend (e.g., for bookings or product management) can be added later.*
-
 ## 🚀 Getting Started (For Developers)
 
 To run this project locally:
